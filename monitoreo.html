@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Monitoreo en Tiempo Real</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script defer src="js/app.js"></script>
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Smart Gaming IoT</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Inicio</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="admin.html">Administración</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="control.html">Control</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" href="monitor.html">Monitoreo</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-4">
+
+<h2 class="mb-4">Monitoreo en Tiempo Real</h2>
+
+<div class="card bg-dark p-4">
+  <canvas id="grafica"></canvas>
+</div>
+
+<table class="table table-dark table-hover mt-4">
+<thead>
+<tr>
+<th>Nombre</th>
+<th>Estado</th>
+<th>Consumo</th>
+<th>Fecha</th>
+</tr>
+</thead>
+<tbody id="tablaMonitoreo"></tbody>
+</table>
+
+<h3 class="mt-5 text-success">Historial de Encendidos</h3>
+<table class="table table-success table-striped">
+<thead>
+<tr>
+<th>Dispositivo</th>
+<th>Fecha</th>
+<th>Hora</th>
+</tr>
+</thead>
+<tbody id="tablaEncendidos"></tbody>
+</table>
+
+<h3 class="mt-4 text-danger">Historial de Apagados</h3>
+<table class="table table-danger table-striped">
+<thead>
+<tr>
+<th>Dispositivo</th>
+<th>Fecha</th>
+<th>Hora</th>
+</tr>
+</thead>
+<tbody id="tablaApagados"></tbody>
+</table>
+
+<h3 class="mt-5 text-info">Contador de Encendidos</h3>
+<table class="table table-info table-striped">
+<thead>
+<tr>
+<th>Dispositivo</th>
+<th>Veces Encendido</th>
+</tr>
+</thead>
+<tbody id="tablaContador"></tbody>
+</table>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
