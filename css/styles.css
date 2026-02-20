@@ -1,9 +1,123 @@
-body{
-    background:#121212;
-    color:white;
-  }
-  .card{
-    background:#1f1f1f;
-    border-radius:10px;
-  }
-  
+
+body {
+  background: linear-gradient(135deg, #0f0f0f, #1a1a2e);
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+}
+
+
+.navbar {
+  background-color: #111827 !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+.card {
+  background: #1f2937;
+  border: none;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.08);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.25);
+}
+
+
+.btn-primary {
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.btn-primary:hover {
+  opacity: 0.85;
+  transform: scale(1.03);
+  transition: 0.2s;
+}
+
+
+.table {
+  color: white;
+}
+
+.table thead {
+  background-color: #111827;
+}
+
+.table tbody tr:hover {
+  background-color: rgba(0, 255, 255, 0.05);
+}
+
+
+.form-check-input:checked {
+  background-color: #00c6ff;
+  border-color: #00c6ff;
+}
+
+
+
+h1, h2, h3 {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.gamer-watermark {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.08;
+  animation: rgbGlow 6s infinite alternate;
+}
+
+@keyframes rgbGlow {
+  0% { color: #00c6ff; text-shadow: 0 0 10px #00c6ff; }
+  50% { color: #9d00ff; text-shadow: 0 0 15px #9d00ff; }
+  100% { color: #00ffcc; text-shadow: 0 0 20px #00ffcc; }
+}
+/* ======== CORRECCIÓN DE TEXTO EN CARDS ======== */
+
+.card h4,
+.card h5,
+.card h6,
+.card p,
+.card span {
+    color: #ffffff !important;
+}
+
+.card {
+    background: #1f2937;
+    color: #ffffff;
+}
+/* ======== FOOTER PROFESIONAL ======== */
+
+.main-footer {
+  background: linear-gradient(135deg, #0a0f1f, #111827);
+  padding: 40px 0;
+  color: rgba(255, 255, 255, 0.8);
+  border-top: 1px solid rgba(0, 255, 255, 0.1);
+}
+
+.main-footer h5 {
+  color: #00c6ff;
+  font-weight: 600;
+}
+
+.main-footer .autor strong {
+  color: #00ffcc;
+}
+
+.main-footer .anio {
+  font-size: 14px;
+  opacity: 0.6;
+}

@@ -1,80 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 <meta charset="UTF-8">
 <title>Administración</title>
 
+<link rel="icon" type="image/png" href="assets/img/icon.png">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
 <script defer src="js/app.js"></script>
-
 </head>
 
 <body>
 
-<!-- 🔥 NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="index.html">Smart Gaming IoT</a>
-
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
       <span class="navbar-toggler-icon"></span>
     </button>
-
     <div class="collapse navbar-collapse" id="menu">
       <ul class="navbar-nav ms-auto">
-
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Inicio</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link active" href="admin.html">Administración</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="control.html">Control</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="monitoreo.html">Monitoreo</a>
-        </li>
-
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link active" href="admin.html">Administración</a></li>
+        <li class="nav-item"><a class="nav-link" href="control.html">Control</a></li>
+        <li class="nav-item"><a class="nav-link" href="monitoreo.html">Monitoreo</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- 🔹 CONTENIDO -->
 <div class="container mt-4">
-
 <h2 class="mb-4">Administración de Dispositivos</h2>
 
-<div class="card p-4 bg-dark text-light">
-
+<div class="card p-4">
 <input id="nombre" class="form-control mb-2" placeholder="Nombre del dispositivo">
 <input id="tipo" class="form-control mb-3" placeholder="Tipo (Luz, Ventilador, Monitor...)">
-
-<button class="btn btn-primary w-100" onclick="crearDispositivo()">
-Agregar Dispositivo
-</button>
-
+<button class="btn btn-primary w-100" onclick="crearDispositivo()">Agregar Dispositivo</button>
 </div>
 
 <table class="table table-dark table-hover mt-4">
 <thead>
-<tr>
-<th>Nombre</th>
-<th>Tipo</th>
-<th>Estado</th>
-<th>Acciones</th>
-</tr>
+<tr><th>Nombre</th><th>Tipo</th><th>Estado</th><th>Acciones</th></tr>
 </thead>
 <tbody id="tabla"></tbody>
 </table>
-
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<footer class="main-footer mt-5">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      <div class="col-md-6 mb-3">
+        <h5>Smart Gaming Setup IoT</h5>
+        <p>Sistema inteligente de administración de dispositivos IoT gamer.</p>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <p class="autor">
+          Realizado por <strong>Zagbi Jabnel Juárez Cruz</strong>
+        </p>
+        <p class="anio">© 2026 Todos los derechos reservados</p>
+      </div>
+    </div>
+  </div>
+</footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
